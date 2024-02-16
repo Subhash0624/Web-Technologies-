@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            overflow-x: hidden;
+        }
+        .logo{
+    position: relative;
+    width: 10%;
+    height: 10vh;
+    background-color: rgb(55, 58, 49), 58, 49;
+
+}
+        body{
+            background-position: fixed;
+            background:rgb(55, 58, 49);
+            z-index: 1;
+            margin-top: 50px;
+        }
+        .nav1{
+            border-bottom: 1px solid white;
+            display: flex;
+            height: 45px;
+            width: 100%;
+            align-items: center;
+            justify-content:end;
+            position: fixed;
+            top: 0;
+        }
+        .nav1 a{
+            text-decoration: none;
+            color:white;
+            font-size: 20px;
+            padding: 0px 30px;
+        }
+        .nav1 a:hover{
+            color: red;
+            text-decoration: underline;
+        }
+        div{
+            margin-top: 16px;
+            width: 100%; 
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        div a{
+            color: white;
+            font-size: 20px;
+            padding: 0px 30px; 
+        }
+        div a:hover{
+            color: red;
+        }
+        #col{
+            padding-top: 30px;
+            padding-left: 70px;
+            display:flex;
+            flex-wrap: nowrap;
+        }
+        #col .col1 .row1 ul{
+            margin-left: 20px; 
+            width: 600px;
+            height: 450px;
+            padding-right: 300px;
+        }
+        #col .col1 .row1 ul li{
+            width: 800px;
+            height: 28px;
+            list-style: none;
+            padding: 15px 10px;
+            margin: 15px;
+        }
+        #col .col1 .row1 ul li h3{
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(252, 251, 251);
+            font-size: 25px;
+        }
+        #col .col1 .row1 ul li h1{
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            color: #f3d330;
+            font-size: 20px;
+            text-shadow: 0px 1px 4px;
+        }
+        #col .col1 .row1 ul li h2{
+            font-family:Arial, Helvetica, sans-serif;
+            color: rgb(248, 242, 242);
+        }
+
+        #col .col1 .row1 ul #p1{
+            border: 1px solid rgb(252, 248, 248,0.3);
+            height: 150px;
+            width: 630px;
+            font-size: 13px;
+            color: rgb(255, 255, 255);
+            font-family:Arial, Helvetica, sans-serif;
+            line-height: 25px;
+            
+        }
+        #col .col1 .row1 ul a{
+    background-color: black;
+    color: white;
+    padding: 10px 18px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 30px 0;
+    display: inline-block;
+}
+#col .col1 .row1 ul a:hover {
+    background-color:#9e9c9c;
+}
+        #col .col2 img{
+            width: 400px;
+            height: 400px;
+            border-radius: 1000px; 
+            border-width: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo">
+
+            <img src="data:image/jpeg;base64,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" alt="sample">
+        </div>
+
+
+    <nav class="nav1">
+        <a href="">Home</a>
+        <a href="">About</a>
+        <a href="">Services</a>
+        <a href="">portfolio</a>
+        <a href="Registration_form.html" target="_blank">Contact</a>
+    </nav>
+    <div id="col">
+        <div class="col2">
+            <img src="my_photo.jpg" alt="">
+        </div>
+        <div class="col1">
+            <div class="row1">
+                <ul>
+                    <li><h3>I am </h3></li>
+                    <li><h1>Y VENKATA SUBHASH</h1></li>
+                    <li><h2>PENTESTER</h2></li>
+                    <li id="p1"><p>Hey there i am subhash a cyber security enthusiast who constantly motivated to learn about new vulnerabilities and the technologies involved in security.
+                         In the part of cyber security journey i have done a certification.
+                    </p>
+                    <p id="eJPTv2" style="font-size: 20px; color: red; text-shadow: 0px 1px 2px;" >eJPTv2</p>
+                        <p>eJPTv2 is an e-learn security junior Penetration tester certification which tests the candidates reconisance and testing skills using various techniques and tools.</p>
+                        <a href="https://api.accredible.com/v1/frontend/credential_website_embed_image/certificate/85321621">Download Cert</a>
+                    </li>
+        
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
